@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Pujara | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <div class="floating-elements">
+        <span class="float-item f-1">&lt;/&gt;</span>
+        <span class="float-item f-2">{ }</span>
+        <span class="float-item f-3">#</span>
+        <span class="float-item f-4">++</span>
+        <span class="float-item f-5">();</span>
+    </div>
+
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">Smit<span class="dot">.</span>Dev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact" class="cta-link">Let's Talk</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+
+                <div class="profile-badge-wrapper">
+                    <img src="me.png" alt="Profile" class="hero-mini-img">
+                    <span class="badge">Darshan University • CSE '29</span>
+                </div>
+
+                <h1>Building Logic <br> <span class="text-gradient">& Digital Systems</span></h1>
+                <p>Hi, I'm <strong>Smit Pujara</strong>. I turn complex problems into efficient code. From low-level C
+                    memory management to high-concurrency Java applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">See My Code</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="code-block">
+                    <div class="window-header">
+                        <span class="dot-btn red"></span>
+                        <span class="dot-btn yellow"></span>
+                        <span class="dot-btn green"></span>
+                    </div>
+                    <pre><code class="language-c">
+// Hello World
+struct Developer {
+  char name[] = "Smit";
+  char focus[] = "Systems";
+};
+
+void main() {
+  solve_problems();
+  build_future();
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-cuttlefish"></i>
+                    <span>C / C++</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-java"></i> <span>Java
+                        (OOP)</span></div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-html5"></i> <span>Web
+                        Dev</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <a href="https://github.com/smit134/Maze-Master.git" target="_blank" class="project-card"
+                    data-aos="fade-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Maze Generator</h3>
+                            <i class="fas fa-project-diagram branch-icon"></i>
+                        </div>
+                        <p>Advanced C logic using <strong>Recursive Backtracking (DFS)</strong> and manual memory
+                            management.</p>
+                        <div class="tags">
+                            <span>C Language</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/smit134/Virtual-Stock-Engine.git" target="_blank" class="project-card"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Stock Simulator</h3>
+                            <i class="fas fa-chart-line branch-icon"></i>
+                        </div>
+                        <p>Multi-threaded Java application simulating real-time market data and concurrency.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>Multithreading</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/smit134" target="_blank" class="project-card" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Incredible India</h3>
+                            <i class="fas fa-globe-asia branch-icon"></i>
+                        </div>
+                        <p>Immersive tourism portal featuring modern CSS animations and responsive design.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/smit134/Banking-Software.git" target="_blank" class="project-card"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Banking System</h3>
+                            <i class="fas fa-university branch-icon"></i>
+                        </div>
+                        <p>Secure banking software handling user auth, transactions, and file persistence.</p>
+                        <div class="tags">
+                            <span>C++</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-box" data-aos="zoom-in">
+            <h2>Ready to Build?</h2>
+            <p>I'm available for collaborations on C++ Systems or Java Projects.</p>
+
+            <a href="mailto:smitpujara134@gmail.com" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Send an Email
+            </a>
+
+            <div class="social-links">
+                <a href="https://github.com/smit134" target="_blank" class="social-icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/smitpujara-" target="_blank" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/smit_pujara_134" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Smit Pujara. Built with Logic & Code.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        AOS.init({ once: true, offset: 100 });
+
+        const isMobile = window.innerWidth < 768;
+        if (window.particlesJS) {
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": { "value": isMobile ? 20 : 60 },
+                    "color": { "value": "#ffffff" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.3, "random": true },
+                    "size": { "value": 3, "random": true },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": isMobile ? 1.0 : 1.5
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": { "enable": !isMobile, "mode": "grab" }
+                    },
+                    "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } }
+                },
+                "retina_detect": true
+            })
+        };
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links li a');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

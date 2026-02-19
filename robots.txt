@@ -1,6 +1,0 @@
-# Allow all search engines to crawl the site
-User-agent: *
-Allow: /
-
-# Direct bots to your sitemap
-Sitemap: https://smit134.github.io/Smit-Portfolio/sitemap.xml

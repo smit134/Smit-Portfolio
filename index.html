@@ -5,181 +5,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smit Pujara | Portfolio</title>
-    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+
+    <meta name="google-site-verification" content="1g0f1MIU--CIo2033aSkhOYJdm74X2rGid8_JC9gWRY" />
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Fira+Code:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta name="google-site-verification" content="1g0f1MIU--CIo2033aSkhOYJdm74X2rGid8_JC9gWRY" />
-    <meta name="description" content="Portfolio of Smit Pujara, a CSE student at Darshan University specializing in C++, Java, and Systems Programming. View my software projects and technical arsenal.">
-    <meta name="keywords" content="Smit, Pujara, Smit Pujara, Software Engineer, CSE student, Java Developer, C++ Systems, Darshan University">
+
+    <meta name="title" content="Smit Pujara | Portfolio">
+    <meta name="description"
+        content="Portfolio of Smit Pujara, a Computer Science Engineering student specializing in system design, low-level logic, and high-concurrency applications.">
+    <meta name="keywords"
+        content="Smit, Pujara, Smit Pujara, Systems Engineer, CSE student, C++, Java, SecureConnect, Incredible India, Portfolio">
+    <meta name="author" content="Smit Pujara">
     <link rel="canonical" href="https://smit134.github.io/Smit-Portfolio/">
+
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Smit Pujara | Portfolio">
-    <meta property="og:description" content="Building Logic & Digital Systems. Explore my engineering projects.">
-    <meta property="og:image" content="https://smit134.github.io/Smit-Portfolio/me.png">
     <meta property="og:url" content="https://smit134.github.io/Smit-Portfolio/">
+    <meta property="og:title" content="Smit Pujara | Portfolio">
+    <meta property="og:description" content="Explore the technical arsenal and deployed systems of Smit Pujara.">
+    <meta property="og:image" content="https://smit134.github.io/Smit-Portfolio/me.webp">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://smit134.github.io/Smit-Portfolio/">
+    <meta property="twitter:title" content="Smit Pujara | Portfolio">
+    <meta property="twitter:description" content="Building Logic & Digital Systems. Explore my engineering projects.">
+    <meta property="twitter:image" content="https://smit134.github.io/Smit-Portfolio/me.webp">
 </head>
 
 <body>
 
-    <div class="background-animation">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+    <div class="perspective-grid">
+        <div class="grid-plane"></div>
     </div>
 
-    <div id="particles-js"></div>
-
-    <div class="floating-elements">
-        <span class="float-item f-1">&lt;/&gt;</span>
-        <span class="float-item f-2">{ }</span>
-        <span class="float-item f-3">#</span>
-        <span class="float-item f-4">++</span>
-        <span class="float-item f-5">();</span>
-    </div>
+    <div class="ambient-glow"></div>
+    <div class="grid-fade"></div>
+    <div class="global-particles" id="particles-container"></div>
 
     <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
-        <div class="logo">Smit<span class="dot">.</span>Dev</div>
+        <div class="logo">SMIT<span>.DEV</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact" class="cta-link">Let's Talk</a></li>
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#projects">Systems</a></li>
+            <li><a href="#contact" class="btn-contact">Initiate Contact</a></li>
         </ul>
         <div class="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+    <header id="home" class="hero-3d">
+        <div class="hero-content" data-aos="holo-reveal" data-aos-duration="1200">
+            <h1 class="title-3d">Building Logic &<br><span class="gradient-text">Digital Systems</span></h1>
+            <p>Computer Science Engineering student specializing in low-level logic, system design, and high-concurrency
+                applications.</p>
+        </div>
 
-                <div class="profile-badge-wrapper">
-                    <img src="me.png" alt="Smit Pujara - Computer Science Student and Software Developer" class="hero-mini-img">
-                    <span class="badge">Darshan University • CSE '29</span>
-                </div>
-
-                <h1>Building Logic <br> <span class="text-gradient">& Digital Systems</span></h1>
-                <p>Hi, I'm <strong>Smit Pujara</strong>. I turn complex problems into efficient code. From low-level C
-                    memory management to high-concurrency Java applications.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">See My Code</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
+        <div class="scene-3d" id="scene">
+            <div class="layer" data-speed="2">
+                <div class="cube cube-1"><i class="fab fa-cuttlefish"></i></div>
             </div>
-            <div class="hero-visual" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="code-block">
-                    <div class="window-header">
-                        <span class="dot-btn red"></span>
-                        <span class="dot-btn yellow"></span>
-                        <span class="dot-btn green"></span>
-                    </div>
-                    <pre><code class="language-c">
-// Hello World
-struct Developer {
-  char name[] = "Smit";
-  char focus[] = "Systems";
-};
+            <div class="layer" data-speed="-3">
+                <div class="cube cube-2"><i class="fab fa-java"></i></div>
+            </div>
+            <div class="layer" data-speed="1.5">
+                <div class="cube cube-3"><i class="fas fa-database"></i></div>
+            </div>
+            <div class="layer" data-speed="-2">
+                <div class="cube cube-4"><span>{ }</span></div>
+            </div>
+            <div class="layer" data-speed="2.5">
+                <div class="cube cube-5"><span>&lt;/&gt;</span></div>
+            </div>
+            <div class="layer" data-speed="-1.5">
+                <div class="cube cube-6"><span>&gt;_</span></div>
+            </div>
+        </div>
 
-void main() {
-  solve_problems();
-  build_future();
-}
-                    </code></pre>
-                </div>
+        <div class="scroll-down-wrapper">
+            <div class="scroll-down" data-aos="fade-up" data-aos-delay="1000">
+                <span>SCROLL TO DEPLOY</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </header>
 
     <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-cuttlefish"></i>
-                    <span>C / C++</span>
+        <div class="container glass-container" data-aos="fade-up">
+            <h2 class="section-title">System Operator</h2>
+            <div class="about-grid">
+
+                <div class="about-image-wrapper" data-aos="3d-fold">
+                    <div class="img-border">
+                        <img src="me.webp" alt="Smit Pujara" class="profile-img">
+                    </div>
+                    <div class="corner top-left"></div>
+                    <div class="corner bottom-right"></div>
                 </div>
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-java"></i> <span>Java
-                        (OOP)</span></div>
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-database"></i>
-                    <span>MySQL</span>
+
+                <div class="about-text" data-aos="holo-reveal" data-aos-delay="200">
+                    <h3>Smit Pujara</h3>
+                    <p class="role-text"><i class="fas fa-terminal"></i> Darshan University • CSE Undergrad ('29)</p>
+                    <p>I am an engineer obsessed with understanding how systems work under the hood. While others focus
+                        purely on the visual web, I prefer building the architecture that serves it. My focus lies in
+                        memory-safe logic, concurrent processing, and optimized database structures.</p>
                 </div>
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-python"></i>
-                    <span>Python</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="section">
+        <div class="container glass-container" data-aos="fade-up">
+            <h2 class="section-title">Core Architecture</h2>
+            <div class="philosophy-grid">
+                <div class="phil-card" data-aos="3d-fold" data-aos-delay="100">
+                    <i class="fas fa-network-wired icon"></i>
+                    <h3>Distributed Systems</h3>
+                    <p>Building resilient client-server architectures. Fascinated by network protocols and efficient
+                        data routing.</p>
                 </div>
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-html5"></i> <span>Web
-                        Dev</span></div>
+                <div class="phil-card" data-aos="3d-fold" data-aos-delay="200">
+                    <i class="fas fa-memory icon"></i>
+                    <h3>Low-Level Design</h3>
+                    <p>Writing close to the metal. Focused on manual memory management, pointer arithmetic, and
+                        algorithmic efficiency.</p>
+                </div>
+                <div class="phil-card" data-aos="3d-fold" data-aos-delay="300">
+                    <i class="fas fa-server icon"></i>
+                    <h3>Database Engineering</h3>
+                    <p>Constructing normalized relational schemas, managing complex joins, and ensuring ACID properties
+                        in SQL transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container glass-container" data-aos="fade-up">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="stack-flex">
+                <span class="tech-tag" data-aos="3d-fold" data-aos-delay="50">C / C++</span>
+                <span class="tech-tag" data-aos="3d-fold" data-aos-delay="100">Java (OOP)</span>
+                <span class="tech-tag" data-aos="3d-fold" data-aos-delay="150">MySQL</span>
+                <span class="tech-tag" data-aos="3d-fold" data-aos-delay="200">JavaFX</span>
+                <span class="tech-tag" data-aos="3d-fold" data-aos-delay="250">HTML5 / CSS3</span>
+                <span class="tech-tag" data-aos="3d-fold" data-aos-delay="300">System Design</span>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+        <div class="container glass-container" data-aos="fade-up">
+            <h2 class="section-title">Deployed Systems</h2>
             <div class="projects-grid">
 
-                <a href="https://github.com/smit134/Maze-Master.git" target="_blank" class="project-card"
-                    data-aos="fade-up">
-                    <div class="card-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3>Maze Generator</h3>
-                            <i class="fas fa-project-diagram branch-icon"></i>
+                <a href="https://github.com/smit134/" target="_blank" class="project-card"
+                    data-aos="3d-fold" data-aos-delay="100">
+                    <div class="card-inner">
+                        <div class="p-header">
+                            <h3>Secure Connect</h3>
+                            <i class="fas fa-comments"></i>
                         </div>
-                        <p>Advanced C logic using <strong>Recursive Backtracking (DFS)</strong> and manual memory
-                            management.</p>
-                        <div class="tags">
+                        <p>Enterprise messaging system built to master networking and systems programming.</p>
+                        <div class="tech-used">
+                            <span>C++ Server</span>
+                            <span>Java Client</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/smit134/Banking-Software.git" target="_blank" class="project-card"
+                    data-aos="3d-fold" data-aos-delay="200">
+                    <div class="card-inner">
+                        <div class="p-header">
+                            <h3>Secure Banking</h3>
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <p>Command-line banking software handling user auth, transactions, and file persistence.</p>
+                        <div class="tech-used">
+                            <span>C++</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/smit134/Maze-Master.git" target="_blank" class="project-card"
+                    data-aos="3d-fold" data-aos-delay="300">
+                    <div class="card-inner">
+                        <div class="p-header">
+                            <h3>Maze Generator</h3>
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <p>Advanced logic using Recursive Backtracking (DFS) and manual memory management.</p>
+                        <div class="tech-used">
                             <span>C Language</span>
                             <span>Algorithms</span>
                         </div>
                     </div>
                 </a>
 
-                <a href="https://github.com/smit134/Virtual-Stock-Engine.git" target="_blank" class="project-card"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3>Stock Simulator</h3>
-                            <i class="fas fa-chart-line branch-icon"></i>
+                <a href="https://github.com/smit134/Virtual-Stock-Engine.git" target="_blank"
+                    class="project-card" data-aos="3d-fold" data-aos-delay="400">
+                    <div class="card-inner">
+                        <div class="p-header">
+                            <h3>Virtual Stock Engine</h3>
+                            <i class="fas fa-chart-line"></i>
                         </div>
                         <p>Multi-threaded Java application simulating real-time market data and concurrency.</p>
-                        <div class="tags">
+                        <div class="tech-used">
                             <span>Java</span>
                             <span>Multithreading</span>
                         </div>
                     </div>
                 </a>
 
-                <a href="https://github.com/smit134" target="_blank" class="project-card" data-aos="fade-up"
-                    data-aos-delay="200">
-                    <div class="card-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
+                <a href="https://github.com/smit134/" target="_blank" class="project-card" data-aos="3d-fold"
+                    data-aos-delay="500">
+                    <div class="card-inner">
+                        <div class="p-header">
                             <h3>Incredible India</h3>
-                            <i class="fas fa-globe-asia branch-icon"></i>
+                            <i class="fas fa-globe-asia"></i>
                         </div>
-                        <p>Immersive tourism portal featuring modern CSS animations and responsive design.</p>
-                        <div class="tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/smit134/Banking-Software.git" target="_blank" class="project-card"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3>Banking System</h3>
-                            <i class="fas fa-university branch-icon"></i>
-                        </div>
-                        <p>Secure banking software handling user auth, transactions, and file persistence.</p>
-                        <div class="tags">
-                            <span>C++</span>
-                            <span>Security</span>
+                        <p>Immersive tourism portal featuring modern CSS animations and SEO optimization.</p>
+                        <div class="tech-used">
+                            <span>Web Design</span>
+                            <span>UI/UX</span>
+                            <span>SEO</span>
                         </div>
                     </div>
                 </a>
@@ -189,85 +247,74 @@ void main() {
     </section>
 
     <section id="contact" class="section">
-        <div class="container contact-box" data-aos="zoom-in">
-            <h2>Ready to Build?</h2>
-            <p>I'm available for collaborations on C++ Systems or Java Projects.</p>
+        <div class="container glass-container" data-aos="fade-up">
+            <h2 class="section-title">Establish Uplink</h2>
 
-            <a href="mailto:smitpujara134@gmail.com" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> Send an Email
-            </a>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>System Ready for Deployment.</h3>
+                    <p>Available for technical discussions, open-source collaborations, and system-level engineering
+                        roles.</p>
 
-            <div class="social-links">
-                <a href="https://github.com/smit134" target="_blank" class="social-icon" github aria-label=" Follow Smit Pujara on GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/smitpujara-" target="_blank" class="social-icon linkedin" aria-label=" Follow Smit Pujara on LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/smit_pujara_134" target="_blank" class="social-icon instagram" aria-label="Follow Smit Pujara on Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                    <div class="social-links-big">
+                        <div class="social-links-big hide-mobile">
+                            <a href="mailto:smitpujara134@gmail.com"><i class="fas fa-envelope"></i>
+                                smitpujara134@gmail.com</a>
+                            <a href="https://github.com/smit134" target="_blank"><i class="fab fa-github"></i>
+                                github.com/smit134</a>
+                            <a href="https://linkedin.com/in/smitpujara-" target="_blank"><i
+                                    class="fab fa-linkedin"></i>
+                                linkedin.com/in/smitpujara-</a>
+                            <a href="https://instagram.com/smit_pujara_134" target="_blank"><i
+                                    class="fab fa-instagram"></i>
+                                instagram.com/smit_pujara_134</a>
+                            <a href="https://wa.me/917069217220" target="_blank"><i class="fab fa-whatsapp"></i> +91
+                                70692
+                                17220</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form action="https://formspree.io/f/mlgwwgok" id="contact-form" method="POST" class="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" autocomplete="name" required placeholder=" ">
+                            <label for="name">System Name (Your Name)</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" autocomplete="email" required placeholder=" ">
+                            <label for="email">Return Address (Your Email)</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="5" name="message" required placeholder=" "></textarea>
+                            <label for="message">Message Payload...</label>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn-submit">
+                            <span id="btn-text">TRANSMIT DATA</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div id="form-status" style="margin-top: 15px; font-weight: bold;"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Smit Pujara. Built with Logic & Code.</p>
+    <footer class="footer">
+        <div class="container glass-container text-center"
+            style="padding: 2rem 4rem; border-radius: 20px; margin-bottom: 2rem;">
+            <div class="social-links">
+                <a href="mailto:smitpujara134@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/smit134" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/smitpujara-" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/smit_pujara_134" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/917069217220" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Smit Pujara | Computer Science Engineering.</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <script>
-        AOS.init({ once: true, offset: 100 });
-
-        const isMobile = window.innerWidth < 768;
-        if (window.particlesJS) {
-            particlesJS("particles-js", {
-                "particles": {
-                    "number": { "value": isMobile ? 20 : 60 },
-                    "color": { "value": "#ffffff" },
-                    "shape": { "type": "circle" },
-                    "opacity": { "value": 0.3, "random": true },
-                    "size": { "value": 3, "random": true },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.2,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": isMobile ? 1.0 : 1.5
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": { "enable": !isMobile, "mode": "grab" }
-                    },
-                    "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } }
-                },
-                "retina_detect": true
-            })
-        };
-
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const links = document.querySelectorAll('.nav-links li a');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-
 
 </html>

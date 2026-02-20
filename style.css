@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+[data-aos="holo-reveal"] {
+    transform: scaleY(1.5) scaleX(0.8);
+    filter: blur(10px);
+    opacity: 0;
+    color: var(--accent);
+    transition-property: transform, opacity, filter, color;
+}
+
 :root {
     --bg-dark: #050508;
     --surface: #101016;
@@ -88,7 +104,7 @@ a {
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background: linear-gradient(to top, var(--bg-dark) 5%, transparent 100%);
     z-index: 1;
     pointer-events: none;
@@ -106,13 +122,6 @@ a {
     opacity: 1;
 }
 
-[data-aos="holo-reveal"] {
-    transform: scaleY(1.5) scaleX(0.8);
-    filter: blur(10px);
-    opacity: 0;
-    color: var(--accent);
-    transition-property: transform, opacity, filter, color;
-}
 
 [data-aos="holo-reveal"].aos-animate {
     transform: scaleY(1) scaleX(1);
@@ -190,6 +199,7 @@ a {
     justify-content: center;
     position: relative;
     perspective: 1000px;
+    padding-bottom: 80px;
 }
 
 .hero-content {
@@ -198,6 +208,7 @@ a {
     pointer-events: none;
     max-width: 800px;
     padding: 0 20px;
+    margin-top: -5vh;
 }
 
 
@@ -321,7 +332,7 @@ a {
 
 .scroll-down-wrapper {
     position: absolute;
-    bottom: 110px;
+    bottom: 180px;
     left: 0;
     width: 100%;
     display: flex;
@@ -380,7 +391,8 @@ a {
 }
 
 .profile-img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     filter: grayscale(10%) contrast(1.1);
     clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
@@ -708,7 +720,7 @@ a {
 .social-links-big {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .social-links-big a {
@@ -923,7 +935,7 @@ textarea:-webkit-autofill:focus {
     -webkit-text-fill-color: #ffffff !important;
     transition: background-color 5000s ease-in-out 0s;
     border-color: var(--border) !important;
-    
+
 }
 
 /* TABLET OPTIMIZATION (Up to 900px) */
@@ -997,6 +1009,11 @@ textarea:-webkit-autofill:focus {
 
 /* MOBILE PHONE OPTIMIZATION (Up to 600px) */
 @media (max-width: 600px) {
+
+    .grid-plane {
+        background-image: linear-gradient(rgba(79, 70, 229, 0.1) 1px, transparent 1px);
+        background-size: 100px 100px;
+    }
 
     .section {
         padding: 3rem 5%;

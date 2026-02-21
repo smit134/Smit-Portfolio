@@ -1,12 +1,8 @@
 // 1. Initialize Custom AOS Scroll Animations
-window.addEventListener('load', () => {
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 0,
-        easing: 'ease-out-back'
-    });
-    AOS.refresh();
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100,
 });
 
 // 2. Mobile Menu Toggle (Combined & Cleaned)

@@ -1,50 +1,87 @@
 // 1. Initialize Custom AOS Scroll Animations
-AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100,
+document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+    });
 });
 
-// 2. Mobile Menu Toggle (Combined & Cleaned)
+// 2. Mobile Menu Toggle (Accessible & Keyboard-Friendly)
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
+function openMenu() {
+    navLinks.classList.add('mobile-active');
+    navLinks.style.display = 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '70px';
+    navLinks.style.left = '0';
+    navLinks.style.width = '100%';
+    navLinks.style.background = 'rgba(5, 5, 8, 0.95)';
+    navLinks.style.padding = '2rem 0';
+    hamburger.setAttribute('aria-expanded', 'true');
+}
+
+function closeMenu() {
+    navLinks.classList.remove('mobile-active');
+    navLinks.style.display = 'none';
+    hamburger.setAttribute('aria-expanded', 'false');
+}
+
 if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-active');
-
         if (navLinks.classList.contains('mobile-active')) {
-            navLinks.style.display = 'flex';
-            navLinks.style.flexDirection = 'column';
-            navLinks.style.position = 'absolute';
-            navLinks.style.top = '70px';
-            navLinks.style.left = '0';
-            navLinks.style.width = '100%';
-            navLinks.style.background = 'rgba(5, 5, 8, 0.95)';
-            navLinks.style.padding = '2rem 0';
+            closeMenu();
         } else {
-            navLinks.style.display = 'none';
+            openMenu();
         }
+    });
+
+    // Close menu on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks.classList.contains('mobile-active')) {
+            closeMenu();
+            hamburger.focus();
+        }
+    });
+
+    // Close menu when a nav link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('mobile-active')) {
+                closeMenu();
+            }
+        });
     });
 }
 
-// 3. Hero 3D Mouse Parallax Effect
-document.addEventListener("mousemove", (e) => {
-    const layers = document.querySelectorAll(".layer");
-    const x = (window.innerWidth - e.pageX * 2) / 100;
-    const y = (window.innerHeight - e.pageY * 2) / 100;
+// 3. Hero 3D Mouse Parallax Effect (Throttled with requestAnimationFrame)
+let mouseTicking = false;
 
-    layers.forEach(layer => {
-        const speed = layer.getAttribute("data-speed");
-        if (speed) {
-            const xPos = x * speed;
-            const yPos = y * speed;
-            layer.style.transform = `translateX(${xPos}px) translateY(${yPos}px)`;
-        }
+document.addEventListener("mousemove", (e) => {
+    if (mouseTicking) return;
+    mouseTicking = true;
+
+    requestAnimationFrame(() => {
+        const layers = document.querySelectorAll(".layer");
+        const x = (window.innerWidth - e.pageX * 2) / 100;
+        const y = (window.innerHeight - e.pageY * 2) / 100;
+
+        layers.forEach(layer => {
+            const speed = layer.getAttribute("data-speed");
+            if (speed) {
+                const xPos = x * speed;
+                const yPos = y * speed;
+                layer.style.transform = `translateX(${xPos}px) translateY(${yPos}px)`;
+            }
+        });
+        mouseTicking = false;
     });
 });
 
-// 4. Global Ambient Particles (Parallax on Scroll)
+// 4. Global Ambient Particles (Throttled Scroll with RAF + Passive Listener)
 const particlesContainer = document.getElementById('particles-container');
 const particles = [];
 
@@ -65,13 +102,21 @@ if (particlesContainer) {
         particles.push(p);
     }
 
+    let scrollTicking = false;
+
     window.addEventListener('scroll', () => {
-        let scrollY = window.scrollY;
-        particles.forEach(p => {
-            let speed = p.getAttribute('data-scroll-speed');
-            p.style.transform = `translateY(${scrollY * -speed}px)`;
+        if (scrollTicking) return;
+        scrollTicking = true;
+
+        requestAnimationFrame(() => {
+            const scrollY = window.scrollY;
+            particles.forEach(p => {
+                const speed = p.getAttribute('data-scroll-speed');
+                p.style.transform = `translateY(${scrollY * -speed}px)`;
+            });
+            scrollTicking = false;
         });
-    });
+    }, { passive: true });
 }
 
 // 5. Contact Form Logic (AJAX & Terminal Effect)

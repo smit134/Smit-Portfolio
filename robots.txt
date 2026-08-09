@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Point to your sitemap
+Sitemap: https://smit134.github.io/Smit-Portfolio/sitemap.xml

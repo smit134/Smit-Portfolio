@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #030712;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.font-mono {
+  font-family: 'Fira Code', monospace;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(circle at center, #3f3f46 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+* {
+  box-sizing: border-box;
+}

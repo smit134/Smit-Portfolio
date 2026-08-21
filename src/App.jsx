@@ -116,7 +116,7 @@ const HeroSection = () => {
       <motion.div style={{ y: contentY, opacity }} className="relative z-10 w-full h-full min-h-screen pt-32 pb-16 flex flex-col justify-end px-6 lg:px-12 pointer-events-none">
         
         {/* Right Side Image (Restored to absolute to allow intentional text overlap) */}
-        <div className="absolute top-1/4 right-[5%] lg:right-[10%] w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border border-white/10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 z-10 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.15)] pointer-events-auto">
+        <div className="absolute top-[24%] right-[5%] lg:right-[10%] w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border border-white/10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 z-10 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.15)] pointer-events-auto">
           <img src="https://smit134.github.io/Smit-Portfolio/me.webp" alt="Smit Pujara" className="w-full h-full object-cover opacity-100" />
           <div className="absolute inset-0 bg-blue-500 mix-blend-overlay opacity-20 hover:opacity-0 transition-opacity duration-700"></div>
         </div>

@@ -116,7 +116,7 @@ const HeroSection = () => {
       <motion.div style={{ y: contentY, opacity }} className="relative z-10 w-full h-full min-h-screen pt-32 pb-16 flex flex-col justify-end px-6 lg:px-12 pointer-events-none">
         
         {/* Right Side Image (Restored to absolute to allow intentional text overlap) */}
-        <div className="absolute top-[24%] right-[5%] lg:right-[10%] w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border border-white/10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 z-10 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.15)] pointer-events-auto">
+        <div className="absolute top-[24%] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[5%] lg:right-[10%] w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border border-white/10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 z-10 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.15)] pointer-events-auto">
           <img src="https://smit134.github.io/Smit-Portfolio/me.webp" alt="Smit Pujara" className="w-full h-full object-cover opacity-100" />
           <div className="absolute inset-0 bg-blue-500 mix-blend-overlay opacity-20 hover:opacity-0 transition-opacity duration-700"></div>
         </div>
@@ -536,9 +536,9 @@ function App() {
           <ModulesSection />
           <UplinkSection handleSubmit={handleSubmit} formStatus={formStatus} />
           
-          <footer className="p-6 border-t border-white/5 flex justify-between font-mono text-xs text-zinc-500 uppercase bg-[#030712] relative z-10">
+          <footer className="p-6 border-t border-white/5 flex flex-col md:flex-row items-center gap-6 justify-between font-mono text-xs text-zinc-500 uppercase bg-[#030712] relative z-10 text-center md:text-left">
             <span>&copy; 2026 SMIT PUJARA</span>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <a href="https://github.com/smit134" target="_blank" rel="noreferrer" className="group flex items-center gap-2 hover:text-blue-400 transition-colors">
                 <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="opacity-70 group-hover:opacity-100 transition-opacity"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 GITHUB

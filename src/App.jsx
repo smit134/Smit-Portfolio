@@ -113,26 +113,33 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Parallax Content Container */}
-      <motion.div style={{ y: contentY, opacity }} className="relative z-10 w-full h-full min-h-screen pt-32 pb-16 flex flex-col justify-end px-6 lg:px-12 pointer-events-none">
-        <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.2 }} className="absolute top-1/3 left-6 lg:left-12 hidden md:flex flex-col gap-6 z-10 pointer-events-auto">
-          <div className="flex items-center gap-3">
-            <div className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+      <motion.div style={{ y: contentY, opacity }} className="relative z-10 w-full h-full min-h-screen pt-32 pb-16 flex flex-col justify-between px-6 lg:px-12 pointer-events-none">
+        
+        {/* Top Section (Info & Image) */}
+        <div className="flex-1 relative w-full flex items-center justify-between mb-8 z-10">
+          
+          {/* Left Side Info */}
+          <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, delay: 0.2 }} className="hidden md:flex flex-col gap-6 pointer-events-auto max-w-xs relative z-20">
+            <div className="flex items-center gap-3">
+              <div className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              </div>
+              <span className="font-mono text-xs uppercase tracking-widest text-zinc-400">Available for Deployments</span>
             </div>
-            <span className="font-mono text-xs uppercase tracking-widest text-zinc-400">Available for Deployments</span>
-          </div>
-          <p className="font-mono text-sm max-w-xs text-zinc-500 leading-relaxed border-l-2 border-blue-500/50 pl-4">
-            Engineering high-performance backend systems. Specializing in C++, Java architecture, and scalable databases.
-          </p>
-        </motion.div>
+            <p className="font-mono text-sm text-zinc-500 leading-relaxed border-l-2 border-blue-500/50 pl-4">
+              Engineering high-performance backend systems. Specializing in C++, Java architecture, and scalable databases.
+            </p>
+          </motion.div>
 
-        <div className="absolute top-1/4 right-[10%] w-64 h-64 md:w-96 md:h-96 border border-white/10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 z-10 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.15)] pointer-events-auto">
-          <img src="https://smit134.github.io/Smit-Portfolio/me.webp" alt="Smit Pujara" className="w-full h-full object-cover opacity-100" />
-          <div className="absolute inset-0 bg-blue-500 mix-blend-overlay opacity-20 hover:opacity-0 transition-opacity duration-700"></div>
+          {/* Right Side Image */}
+          <div className="absolute right-0 md:right-[5%] lg:right-[10%] top-1/2 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border border-white/10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 z-10 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.15)] pointer-events-auto">
+            <img src="https://smit134.github.io/Smit-Portfolio/me.webp" alt="Smit Pujara" className="w-full h-full object-cover opacity-100" />
+            <div className="absolute inset-0 bg-blue-500 mix-blend-overlay opacity-20 hover:opacity-0 transition-opacity duration-700"></div>
+          </div>
         </div>
         
-        <div className="relative w-full pt-8 mt-auto pointer-events-auto">
+        <div className="relative w-full pt-8 pointer-events-auto shrink-0 z-20">
           <hr className="absolute top-0 left-0 w-full border-t border-white/10 m-0 p-0 z-0" />
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} className="font-mono text-sm text-blue-400 mb-4 tracking-widest uppercase relative z-20">
             ID: SMIT PUJARA // SPECIALTY: BACKEND & DISTRIBUTED SYSTEMS
